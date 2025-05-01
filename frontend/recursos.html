@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="DEV DEVEL">
+    <title>Recursos Académicos | DEV DEVEL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/navbar.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="logo" href="/html/index.html">
+                    <img src="/assets/iconos/logo2.png" alt="Logo Foro" title="Volver a la página principal">
+                </a>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <a class="logo-offcanvas" href="/DEV_DEVEL/assets/">
+                            <img src="/assets/iconos/logo2.png" alt="Logo Foro">
+                        </a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2 nav-link-item" href="/html/index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2 nav-link-item" href="#">Discusiones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2 nav-link-item" href="/html/recursos.html">Recursos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2 nav-link-item" href="/html/sobreNosotros.html">Sobre
+                                    nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2 nav-link-item" href="#">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="#" class="login-button">Ingresar</a>
+                <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section d-flex justify-content-center align-items-center">
+            <div class="hero-section-slogan text-white p-4">
+                <p>Accede a materiales y recursos académicos...</p>
+            </div>
+        </section>
+
+        <div class="barradebusqueda">
+            <input type="text" class="barradebusqueda-buscar" placeholder="Buscar recursos o materiales académicos...">
+            <div class="filtros">
+                <button>PDF</button>
+                <button>E-Books</button>
+                <button>Tutoriales</button>
+                <button>Videos</button>
+            </div>
+            <div class="ordenar-por">
+                <label for="ordenar">Ordenar por:</label>
+                <select class="ordenar">
+                    <option>Más recientes</option>
+                    <option>Mejor votados</option>
+                    <option>Junior</option>
+                    <option>Semi-senior</option>
+                    <option>Senior</option>
+                </select>
+            </div>
+        </div>
+
+        <section class="recursos">
+            <div class="recursos-card">
+                <h3>Introducción a Git & GitHub</h3>
+                <p>Guía práctica para entender control de versiones desde cero.</p>
+                <span class="tag">TUTORIAL</span>
+                <a href="#" target="_blank">Ver recurso → </a>
+
+                <div class="recursos-reacciones">
+                    <span class="positiva">
+                        👍 <span class="cantidad" id="positiva1">0</span>
+                    </span>
+                    <span class="negativa">
+                        👎 <span class="cantidad" id="negativa1">0</span>
+                    </span>
+                </div>
+            </div>
+            <div class="recursos-card">
+                <h3>Libro: Java desde Cero</h3>
+                <p>Archivo .pdf completo para programadores junior.</p>
+                <span class="tag">PDF</span>
+                <a href="#" target="_blank">Descargar → </a>
+
+                <div class="recursos-reacciones">
+                    <span class="positiva">
+                        👍 <span class="cantidad" id="positiva1">0</span>
+                    </span>
+                    <span class="negativa">
+                        👎 <span class="cantidad" id="negativa1">0</span>
+                    </span>
+                </div>
+            </div>
+            <div class="recursos-card">
+                <h3>Curso MySQL Básico</h3>
+                <p>Curso gratuito de fundamentos de bases de datos relacionales en Youtube.</p>
+                <span class="tag">CURSO</span>
+                <a href="#" target="_blank">Ir al curso → </a>
+
+                <div class="recursos-reacciones">
+                    <span class="positiva">
+                        👍 <span class="cantidad" id="positiva1">0</span>
+                    </span>
+                    <span class="negativa">
+                        👎 <span class="cantidad" id="negativa1">0</span>
+                    </span>
+                </div>
+            </div>
+            <div class="recursos-card">
+                <h3>Recopilación sobre Buenas Practicas en Programación Orientada a Objetos</h3>
+                <p>Aprender POO en JAVA hoy. Buenas prácticas + métodos modernos.</p>
+                <span class="tag">TUTORIAL</span>
+                <a href="#" target="_blank">Ir al tutorial → </a>
+
+                <div class="recursos-reacciones">
+                    <span class="positiva">
+                        👍 <span class="cantidad" id="positiva1">0</span>
+                    </span>
+                    <span class="negativa">
+                        👎 <span class="cantidad" id="negativa1">0</span>
+                    </span>
+                </div>
+            </div>
+            <div class="recursos-card">
+                <h3>Ejercicios de lógica</h3>
+                <p>Mejora tu lógica matemática y de programación con ejercicios de razonamiento lógico.</p>
+                <span class="tag">PDF</span>
+                <a href="#" target="_blank">Ir al curso → </a>
+
+                <div class="recursos-reacciones">
+                    <span class="positiva">
+                        👍 <span class="cantidad" id="positiva1">0</span>
+                    </span>
+                    <span class="negativa">
+                        👎 <span class="cantidad" id="negativa1">0</span>
+                    </span>
+                </div>
+            </div>
+            <div class="recursos-card">
+                <h3>Aprende objetos & arreglos en Javascript (intermedio)</h3>
+                <p>Video sobre objetos y arreglos en JS + ejercicios prácticos para resolver.</p>
+                <span class="tag">VIDEO</span>
+                <a href="#" target="_blank">Ir al video → </a>
+
+                <div class="recursos-reacciones">
+                    <span class="positiva">
+                        👍 <span class="cantidad" id="positiva1">0</span>
+                    </span>
+                    <span class="negativa">
+                        👎 <span class="cantidad" id="negativa1">0</span>
+                    </span>
+                </div>
+            </div>
+            <div class="recursos-card">
+                <h3>Aprende objetos & arreglos en Javascript (intermedio)</h3>
+                <p>Video sobre objetos y arreglos en JS + ejercicios prácticos para resolver.</p>
+                <span class="tag">VIDEO</span>
+                <a href="#" target="_blank">Ir al video → </a>
+
+                <div class="recursos-reacciones">
+                    <span class="positiva">
+                        👍 <span class="cantidad" id="positiva1">0</span>
+                    </span>
+                    <span class="negativa">
+                        👎 <span class="cantidad" id="negativa1">0</span>
+                    </span>
+                </div>
+            </div>
+            <div class="recursos-card">
+                <h3>Aprende objetos & arreglos en Javascript (intermedio)</h3>
+                <p>Video sobre objetos y arreglos en JS + ejercicios prácticos para resolver.</p>
+                <span class="tag">VIDEO</span>
+                <a href="#" target="_blank">Ir al video → </a>
+
+                <div class="recursos-reacciones">
+                    <span class="positiva">
+                        👍 <span class="cantidad" id="positiva1">0</span>
+                    </span>
+                    <span class="negativa">
+                        👎 <span class="cantidad" id="negativa1">0</span>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2025 | DEV DEVEL</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
